@@ -1,0 +1,84 @@
+LOGICAS
+  "Y"  &&
+  "O"  ||
+
+COMPARATIVAS
+  "MAYOR QUE" >
+  "MENOR QUE" <
+  "MAYOR O IGUAL QUE" >=
+  "MENOR O IGUAL QUE" <=
+  "IGUAL" ==
+  "DISTINTO A" !=
+
+
+40 MAYOR QUE 30 => CIERTO
+30 MAYOR QUE 40 => FALSO
+
+(40 MAYOR QUE 30) Y (40 MENOR QUE 50)
+^^^^^^^^^^^^^^^^^ Y ^^^^^^^^^^^^^^^^^
+      SI                    SI
+                  SI
+
+
+(40 MAYOR QUE 30) O (40 MENOR QUE 50)
+^^^^^^^^^^^^^^^^^   ^^^^^^^^^^^^^^^^^
+      SI          O          SI
+                  SI
+
+
+
+VAR ESTACION =  "VERANO"
+VAR TEMPERATURA = 19
+
+SI (ESTACION IGUAL A VERANO) ENTONCES
+  AQUI LAS ACCIONES A TOMAR 
+  BEBER_AGUA
+  NADAR_EN_LA_PLAYA()
+  TOMARSE_UN_MOJITO()
+  IRSE_AL_BAR() 
+EN CASO CONTRARIO ENTONCES:
+  PONERSE_EL_ABRIGO()
+  BEBER_CHOCOLATE_CALIENTE()
+  VER_LA_TELE()
+
+
+==========================
+
+Bucles While y Do while
+
+|1|2|3|4|5|6|7|8|9|
+
+VAR CONTADOR = 10
+MIENTRAS CONTADOR MAYOR A CERO 
+  RESTA UNO AL CONTADOR
+
+
+Do while
+VAR CONTADOR = 10
+ 
+HAZ
+  RESTA UNO AL CONTADOR
+  MIENTRAS (CONTADOR SEA MAYOR QUE 10)
+  RESTA UNO AL CONTADOR
+
+
+=======================
+
+Bucles For//
+
+VAR CONTADOR = 10
+"PARA "(INICIALIZACION; COMPARACION; ACCION)
+
+"PARA"(; CONATADOR MAYOR QUE 0; CONSTADOR IGUAL A CONTADOR MENOS 1)
+  IMPRIME EL VALOR DE LA VARIANBLE CONTADOR
+
+
+====================================
+  Switch Case
+
+
+
+  VAR ESTACION = "VERANO"
+  DICIERNE (ESTACION)
+  CASO "VERANO"
+    IMPRIME "E VERANO
