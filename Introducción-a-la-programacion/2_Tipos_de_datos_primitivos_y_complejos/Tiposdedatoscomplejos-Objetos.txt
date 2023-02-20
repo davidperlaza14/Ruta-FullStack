@@ -1,0 +1,38 @@
+Objeto: Se trata de un ente abstracto usado en programación que permite separar los diferentes componentes de un programa, simplificando así su elaboración, depuración y posteriores mejoras.
+
+
+Caja:
+  Propiedades:
+    -Color:blanco
+    -Forma:rectangular
+
+class Caja {
+  String Color = "blanco";
+  String Forma = "rectangular";
+  int Largo = 20;
+}
+
+
+Juguete:
+  Propiedades:
+    -Color:marron
+    -Forma: patata
+Metodos:
+  -Poner Sombreros
+  -Quitar brazo
+
+class Caja {
+  String Color = "marron";
+  String Forma = "patata";
+  int Largo = 20;
+}
+
+
+
+=========================================
+
+Consejos y curiosidades sobre los tipos de datos
+
+nombre = "Victor" + "0"
+
+arrayCaracteres = ['V','i', 'c', 't', 'o', 'r', 0]
