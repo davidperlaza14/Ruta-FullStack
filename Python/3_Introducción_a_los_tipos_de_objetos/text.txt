@@ -1,0 +1,7 @@
+En Python existen clases predefinidas para los tipos de datos primitivos:
+int : Clase de los números enteros.
+float : Clase de los números reales.
+str : Clase de las cadenas de caracteres.
+list : Clase de las listas.
+tuple : Clase de las tuplas.
+dict : Clase de los diccionarios.
