@@ -5,6 +5,14 @@ En este segundo ejercicio, tenéis que crear una aplicación que obtendrá los e
 from functools import reduce
 
 def Ejercicio2(lista):
+  '''Filtra los números pares de la lista y luego los suma
+  
+  Parameters
+  ----------
+  lista
+    lista de numeros
+  
+  '''
   result = list(filter((lambda x: x % 2), lista))
   print(result)
   result = reduce((lambda x, y: x + y), result)
