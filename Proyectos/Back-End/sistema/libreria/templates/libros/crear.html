@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block Titulo %} Agregar nuevo libro {% endblock %}
+
+{% block Contenido %}
+
+<div class="card">
+  <div class="card-header">
+    Creae un libro
+  </div>
+  <div class="card-body">
+    <h4 class="card-title">Datos del libro</h4>
+    {% include 'libros/form.html' %}
+  </div>
+</div>
+
+{% endblock %}

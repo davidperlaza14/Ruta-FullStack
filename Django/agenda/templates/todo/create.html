@@ -1,0 +1,22 @@
+{% extends "layout/base.html" %}
+
+{% block title %} Crear Tarea {% endblock %}
+
+{% block 'styles' %}
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/forms.css' %}">
+{% endblock %}
+
+
+{% block 'content' %}
+  <span class="aux-btns-form" style="display: flex; justify-content: center; margin: 10px;"><a href="{% url 'todo' %}">Volver atras</a></span>
+  <form action="{% url 'todo_create' %}" method="POST">
+      {% csrf_token %}
+      <table>
+        {{ form.as_table }}
+      </table>
+      <div style="width: 100%; display:flex; justify-content:flex-end;">
+          <input type="submit" value="Enviar"  style="width:79%; background-color: #2ea3f2; color:white; border:0; padding:5px; text-transform:uppercase; cursor:pointer; "  class="btn-send">
+      </div>
+  </form>
+{% endblock %}
