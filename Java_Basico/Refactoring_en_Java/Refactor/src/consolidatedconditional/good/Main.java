@@ -10,22 +10,21 @@ public class Main {
 
     double calcularExtraSalary() {
         double result = 0;
-        if (seniority < 1) {
-            return 0;
-        }
-        if (education < 1) {
-            return 0;
-        }
-        if (incidents > 10) {
-            return 0;
-        }
-        if (!certification) {
-            return 0;
-        }
 
+        if (!isEligibleExtraSalary()) {
+            return result;
+        }
         // Calculate extra salary;
         // ...
         return result;
+
     }
 
+
+    public boolean isEligibleExtraSalary() {
+        // agrupar condiciones utilizando AND (&&) y OR (||)
+        boolean estudios = seniority < 1 || education <1;
+        boolean antiguedad = incidents > 10 && certification;
+        return estudios || antiguedad;
+    }
 }

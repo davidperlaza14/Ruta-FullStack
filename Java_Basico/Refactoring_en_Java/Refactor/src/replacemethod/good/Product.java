@@ -1,28 +1,26 @@
-package replacemethod.bad;
+package replacemethod.good;
 
+/**
+ * Técnica de refactoring para componer métodos
+ * (Composing Methods)
+ *
+ * Replace method with method object
+ */
 public class Product {
 
-    double price;
-    int quantity;
-    double discount;
-    double shipping;
+    private double price;
+    private int quantity;
+    private double discount;
+    private double shipping;
 
-    // constructores
 
-    // metodos
+    // metodos especiales
 
-    // tostring
+    double calculatePrice(){
+        // ProductPriceCalculator calculator = new ProductPriceCalculator(this);
+        // return calculator.calculatePrice();
 
-    public double calculatePrice(){
-        double result = 0;
-        double priceQuantity = this.price * this.quantity;
-        double priceDiscount = this.price * this.discount;
-        double priceShipping = shipping * 0.50;
-
-        // .......
-
-        // ......
-        return result;
+        return new ProductPriceCalculator(this).calculatePrice();
     }
 
     // getter y setter
@@ -50,4 +48,7 @@ public class Product {
     public void setShipping(double shipping) {
         this.shipping = shipping;
     }
+
+
+
 }

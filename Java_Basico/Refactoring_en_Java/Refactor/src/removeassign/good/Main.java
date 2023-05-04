@@ -1,4 +1,6 @@
-package removeassign.bad;
+package removeassign.good;
+
+import removeassign.bad.Order;
 
 public class Main {
 
